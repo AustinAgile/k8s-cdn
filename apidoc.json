@@ -1,0 +1,24 @@
+{
+	"name": "awl-data",
+	"version": "0.2.0",
+	"_description": "apiDoc basic example",
+	"_title": "Custom apiDoc browser title",
+	"url" : "http://localhost:3001",
+	"sampleUrl" : "http://localhost:3001",
+	"order": [
+		"Data",
+			"getRoot",
+		"Configuration",
+			"getCurrent",
+			"getFileNames",
+			"getDeployed",
+		"Monitoring",
+		"Diagnostics",
+			"getPackage",
+			"getLogInfo",
+		"Utilities",
+		"Documentation",
+			"getReadme",
+			"getAPI"
+	]
+}
