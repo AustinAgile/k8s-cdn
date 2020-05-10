@@ -47,7 +47,6 @@ app.use(function(req, res, next) {
 // will print stacktrace
 if (app.get('env') === 'development') {
 	console.log("app error 2");
-	console.log(req.url);
 	app.use(function(err, req, res, next) {
 		res.status(err.status || 500);
 		res.send();
@@ -58,7 +57,6 @@ if (app.get('env') === 'development') {
 // no stacktraces leaked to user
 app.use(function(err, req, res, next) {
 	console.log("app error 3");
-	console.log(req.url);
 	res.status(err.status || 500);
 	res.send();
 });
