@@ -14,7 +14,7 @@
 		"csv-string": "*",
 		"debug": "~2.6.9",
 		"docker-remote-api": "*",
-		"express": "~4.14.0",
+		"express": "~4.17.0",
 		"express-fileupload": "*",
 		"express-hal": "*",
 		"k8s": "*",

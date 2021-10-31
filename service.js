@@ -10,7 +10,7 @@ var http = require('http');
 */
 
 var port = normalizePort(process.env.PORT || '3030');
-console.log('PBR Simulator starting...');
+console.log('k8s CDN server starting ...');
 app.set('port', port);
 
 /**

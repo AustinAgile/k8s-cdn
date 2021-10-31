@@ -7,6 +7,11 @@ const router = require('express').Router();
 //	host: '/var/run/docker.sock'
 //});
 
+router.get('/node', function(req, res, next) {
+	console.log("node version");
+	res.send("Node.js version: "+process.version);
+});
+
 router.get('/', function(req, res, next) {
 	getImageTagFromKubernetes(function(err, tag) {
 		res.send(tag);

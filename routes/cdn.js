@@ -1,11 +1,11 @@
 const router = require('express').Router();
 const fs = require('fs');
 
-router.get('/:filename*', function(req, res, next) {
-	console.log("cdn");
-	var options = {
-		root: '../'
-	};
+	router.get('/:filename*', function(req, res, next) {
+		console.log("cdn");
+		var options = {
+			root: '../'
+		};
 
 	var path = req.params.filename;
 	console.log(path);
